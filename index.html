@@ -3,27 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cloud Tech Logic | Modern Websites & Microsoft 365 Solutions</title>
+  <title>Cloud Tech Logic | Modern Websites & Enterprise M365 Solutions</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header id="hdr">
+
+  <header>
     <div class="wrap">
       <div class="bar">
         <a class="logo" href="index.html">
-          <span style="font-weight:800; color:var(--brand); font-size:1.45rem;">{&#x2359;}</span>
-          <span style="font-weight:500;">cloud<b style="color:var(--brand);">tech</b>logic</span>
+          <span class="logo-icon">&#x2359;</span>
+          <span>cloud<b style="color:var(--brand-cyan);">tech</b>logic</span>
         </a>
-        <button class="menu" aria-expanded="false" onclick="document.getElementById('nav').classList.toggle('open')">Menu</button>
-        <nav id="nav" aria-label="Main navigation">
+        <nav>
           <a href="index.html">Home</a>
           <a href="websites.html">Websites</a>
           <a href="microsoft-365.html">Microsoft 365</a>
           <a href="about.html">About</a>
-          <a href="contact.html" class="btn small">Get in Touch</a>
+          <a href="contact.html" class="btn" style="padding:10px 22px; font-size:0.9rem;">Get in Touch</a>
         </nav>
       </div>
     </div>
@@ -32,31 +32,64 @@
   <main>
     <section class="hero">
       <div class="wrap">
-        <span class="kicker">Human-Centred Digital Solutions</span>
-        <h1><span>Beautiful websites made simple.</span><span class="soft">Microsoft 365 made smart.</span></h1>
-        <p class="lead">Cloud Tech Logic delivers high-performance websites for businesses and enterprise-grade Microsoft 365, SharePoint, and Power Platform solutions.</p>
-        <div style="display:flex; gap:14px; flex-wrap:wrap;">
-          <a class="btn" href="contact.html">Book Free Consultation</a>
-          <a class="btn ghost" href="websites.html">Explore Websites</a>
+        <div class="hero-grid">
+          <div>
+            <div class="badge">
+              <span class="badge-dot"></span> Modern Digital Engineering
+            </div>
+            <h1>Smart Websites. <br><span class="gradient-text">Powerful Cloud Logic.</span></h1>
+            <p>We craft stunning custom websites, high-converting e-commerce stores, and enterprise-grade Microsoft 365 & Power Platform automation.</p>
+            <div class="hero-btns">
+              <a class="btn" href="contact.html">Book Consultation</a>
+              <a class="btn ghost" href="websites.html">Our Services</a>
+            </div>
+          </div>
+          <div class="hero-image-wrap">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80" alt="Digital Tech Dashboard & Web Analytics">
+          </div>
         </div>
-        <div class="paths">
-          <a href="websites.html" style="--c:var(--teal)">
-            <strong>Websites & E-Commerce</strong>
-            <span>Custom-designed websites, online store setups, and search engine optimization.</span>
+      </div>
+    </section>
+
+    <section style="padding: 80px 0;">
+      <div class="wrap">
+        <div class="section-title">
+          <h2>What We Build</h2>
+          <p>End-to-end cloud solutions designed to modernize your online identity and streamline operational workflows.</p>
+        </div>
+
+        <div class="card-grid">
+          <a class="card" href="websites.html">
+            <div class="card-img-holder">
+              <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=800&q=80" alt="Web Development & Design">
+            </div>
+            <div class="card-body">
+              <h3>Websites & E-Commerce</h3>
+              <p>Custom responsive websites, Shopify/WooCommerce store setups, speed optimization, and SEO tailored to convert visitors.</p>
+              <span class="card-link">Explore Website Services &rarr;</span>
+            </div>
           </a>
-          <a href="microsoft-365.html" style="--c:var(--blue)">
-            <strong>Microsoft 365 & Automation</strong>
-            <span>SharePoint migrations, Power Automate workflows, Purview governance, and Teams.</span>
+
+          <a class="card" href="microsoft-365.html">
+            <div class="card-img-holder">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Cloud Data & Automation">
+            </div>
+            <div class="card-body">
+              <h3>Microsoft 365 & Automation</h3>
+              <p>SharePoint architecture, Power Automate workflow engine builds, custom Power Apps, and Microsoft Purview compliance.</p>
+              <span class="card-link">Explore M365 Solutions &rarr;</span>
+            </div>
           </a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer style="background:var(--ink); color:#c5d2e0; padding:60px 0; margin-top:80px;">
+  <footer style="border-top:1px solid var(--border); padding:50px 0; margin-top:60px; text-align:center; color:var(--text-muted); font-size:0.95rem;">
     <div class="wrap">
       <p>&copy; 2026 Cloud Tech Logic. All rights reserved.</p>
     </div>
   </footer>
+
 </body>
 </html>
